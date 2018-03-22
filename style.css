@@ -13,12 +13,17 @@ img#logo
 	width: 10%;
 }
 
+h2
+{
+	transform-rotate:calc(90deg);
+}
+
 nav
 {
 	
 }
 
-section
+div
 {
 	
 }
