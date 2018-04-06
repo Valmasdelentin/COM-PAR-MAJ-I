@@ -1,42 +1,77 @@
 header
 {
-	top: 0;
+	margin-top:0px;
 	width: 100%;
-}
-img#gif
-{
-	position:relative;
-	z-index: 0;
-	width:100%;
-	height:300px;
-}
-img#logo
-{
-	z-index:1;
-	display: block;
-	margin-right: auto;
-	margin-left: auto;
-	height: 10%;
-	width: 10%;
+	height:350px;
+	border:solid black 1px;
 }
 
-h2
+.logo
 {
-	transform-rotate:calc(90deg);
+	margin:auto;
+	margin-top:75px;
+	border:solid black 1px;
+	border-radius: 50%;
+	width:200px;
+	height:200px;
+	background-image: url("images/logo.png");
+	background-size: 75% 75%;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 nav
 {
-	
+	border:solid black 1px;
+}
+#menu_horizontal
+	{
+		text-align: center;
+		margin-top:20px;
+	}
+
+ul#menu_horizontal li 
+	{ 
+		display : inline;
+		padding : 1.5em; /* Pour espacer les boutons entre eux */
+		font-size: 1.5em; /*taille des boutons*/
+	}
+
+ul#menu_horizontal 
+	{
+		list-style-type : none; /* Car sinon les puces se placent n'importe où */
+	}
+
+ul#menu_horizontal li a
+	{
+	 	color: #000;
+	}
+
+div.sections
+{
+	border:solid black 1px;
+	height:600px;
+	width:auto;
+	display:block;
 }
 
-div
+h1
 {
-	
+	font-size: 50px;
+	transform:rotate(-90deg);
+	text-align:center;
+	width:470px;
+	height:425px;
+}
+
+p
+{
+	text-align: justify;
 }
 
 footer
 {
-	
+	height:50px;
+	width:auto;
+	background-color: #000;
 }
-
