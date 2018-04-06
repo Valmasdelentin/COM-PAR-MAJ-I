@@ -2,58 +2,53 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>COM PAR MAJ'I</title>
+			
+	<title>Agence de communication - COM PAR MAJ'I</title>
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body>
 	
 	<header>
-		<img id="logo" src="images\logo.png" alt="Logo">
+		<div class="logo"></div>
 	</header>
 
 	<nav>			
-				<a href="">Accueil</a>
-
-				<a href="">Agence</a>
-				<ul><a href="">Description de l'agence</a></ul>
-				<ul><a href="">Equipe</a></ul>
-
-				<a href="">Portfolio</a>
-				<a href="">Nos Créations</a>
-				<a href="">(Nos Clients)</a>
-				<a href="">Contacts</a>
+		<ul id="menu_horizontal">
+			<li><a href="accueil.php">Accueil</a></li>
+			<li><a href="Agence.php">Agence</a></li>
+			<li><a href="portfolio.php">Portfolio</a></li>
+			<li><a href="contacts.php">Contacts</a></li>
+		</ul>
 	</nav>
 
-	<div class="sections" id="agence">
-		<h2>Agence</h2>
+	<div class="sections">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea ipsum architecto eius explicabo repellendus iure, eaque hic praesentium magni tenetur nesciunt velit natus, autem distinctio exercitationem animi aspernatur obcaecati ullam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, architecto, ipsum. Ut eum, nesciunt porro nulla velit sunt! Dicta earum ipsum, repellat eos dolor assumenda necessitatibus illum neque natus, ex?</p>
+		<h1 id="agence">AGENCE</h1>
 	</div>
-	<div class="sections" id="description de l'agence">
-		<h2>Description de l'agence</h2>
+	<div class="sections">
+		<h1 id="portfolio">PORTFOLIO</h1>
 	</div>
-	<div class="sections" id="equipe">
-		<h2>Equipe</h2>
-	</div>
-	<div class="sections" id="portfolio">
-		<h2>Portfolio</h2>
-	</div>
-	<div class="sections" id="creation">
-		<h2>Nos Créations</h2>
-	</div>
-	<div class="sections" id="clients">
-		<h2>Nos Clients</h2>
-	</div>
-	<div class="sections" id="contacts">
-		<h2>Contacts</h2>
+	<div class="sections">
+		<h1 id="contacts">NOUS CONTACTER</h1>
 	</div>
 
-	<footer>
-		Footer
-	</footer>
+	<footer></footer>
 
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<script>
+		$("h1").css({fontSize: "40px"});
+		
+		$('p').css({
+    		'margin-top': '30px',
+    		'margin-right': '200px',
+    		'margin-left': '200px'
+    	});
+
+	</script>
 	
 </body>
 </html>
