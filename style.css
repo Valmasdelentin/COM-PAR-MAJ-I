@@ -1,5 +1,8 @@
 header
 {
+	background-image:url("gif/peinture.gif");
+	background-repeat: no-repeat;
+	background-size: cover;
 	margin-top:0px;
 	width: 100%;
 	height:350px;
@@ -52,7 +55,7 @@ div.sections
 	border:solid black 1px;
 	height:600px;
 	width:auto;
-	display:block;
+	position: relative;
 }
 
 h1
@@ -62,11 +65,31 @@ h1
 	text-align:center;
 	width:470px;
 	height:425px;
+	position:absolute;
+	top:50%;
 }
 
 p
 {
 	text-align: justify;
+	margin-top: 30px;
+}
+
+div.cercles
+{
+	border:solid black 1px;
+	border-radius: 50%;
+	width:200px;
+	height:200px;
+	margin-top: 50px;
+}
+
+div.carrés
+{
+	border:solid black 1px;
+	width:200px;
+	height:200px;
+	margin-top:50px;
 }
 
 footer
