@@ -207,12 +207,36 @@ p#CoordonnéesAgence
 
 div.reseauxSociaux
 {
-	border:solid black 1px;
-	border-radius: 50%;
-	background-color: #000;
 	width:50px;
 	height:50px;
 	margin-top: 50px;
+}
+
+div#facebook
+{
+	background-image: url("images/facebook_logo.jpg");
+	background-size: 75% 75%;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor:pointer;
+}
+
+div#twitter
+{
+	background-image: url("images/twitter_logo.jpg");
+	background-size: 75% 75%;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor:pointer;
+}
+
+div#instagram
+{
+	background-image: url("images/instagram_logo.png");
+	background-size: 75% 75%;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor:pointer;
 }
 
 p#descriptionContacte
