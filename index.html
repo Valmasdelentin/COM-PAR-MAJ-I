@@ -6,6 +6,7 @@
 	<title>Agence de communication - COM PAR MAJ'I</title>
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="animate.min.css">
 </head>
 <body>
 	
@@ -64,32 +65,48 @@
 					<div class="row">
 						<div class="col-md-12">
 							<div class="col-md-3">
-								<div class="carrés"></div>
+								<div id ="carrés1" class="carrés">
+									<a class="c">en savoir plus</a>
+								</div>
 							</div>
 							<div class="col-md-3">
-								<div class="carrés"></div>
+								<div id ="carrés2" class="carrés">
+									<a class="c">en savoir plus</a>
+								</div>
 							</div>
 							<div class="col-md-3">
-								<div class="carrés"></div>
+								<div id ="carrés3" class="carrés">
+									<a class="c">en savoir plus</a>
+								</div>
 							</div>
 							<div class="col-md-3">
-								<div class="carrés"></div>
+								<div id ="carrés4" class="carrés">
+									<a class="c">en savoir plus</a>
+								</div>
 							</div>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-md-12">
 							<div class="col-md-3">
-								<div class="carrés"></div>
+								<div id ="carrés5" class="carrés">
+									<a class="c">en savoir plus</a>
+								</div>
 							</div>
 							<div class="col-md-3">
-								<div class="carrés"></div>
+								<div id ="carrés6" class="carrés">
+									<a class="c">en savoir plus</a>
+								</div>
 							</div>
 							<div class="col-md-3">
-								<div class="carrés"></div>
+								<div id ="carrés7" class="carrés">
+									<a class="c">en savoir plus</a>
+								</div>
 							</div>
 							<div class="col-md-3">
-								<div class="carrés"></div>
+								<div id ="carrés8" class="carrés">
+									<a class="c">en savoir plus</a>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -152,6 +169,11 @@
 		$('p').css({
     		'text-align': 'justify'
     	});
+
+		$('.carrés').hover(
+       function(){ $(this).addClass('.carrés animated pulse') },
+       function(){ $(this).removeClass('.carrés') }
+)
 
 	</script>
 	

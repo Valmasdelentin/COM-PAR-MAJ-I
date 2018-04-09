@@ -85,6 +85,111 @@ div.carrés
 	height:200px;
 	margin-top:50px;
 	display:block;
+	animation-duration: 1s;
+	animation-delay: 0s;
+}
+
+div#carrés1
+{
+
+}
+
+div#carrés1:hover
+{
+	background-color: blue;
+	opacity:25%;
+	cursor:pointer;
+}
+
+div#carrés2
+{
+
+}
+
+div#carrés2:hover
+{
+	background-color: red;
+	opacity:25%;
+	cursor:pointer;
+}
+
+div#carrés3
+{
+
+}
+
+div#carrés3:hover
+{
+	background-color: green;
+	opacity:25%;
+	cursor:pointer;
+}
+
+div#carrés4
+{
+	
+}
+
+div#carrés4:hover
+{
+	background-color: yellow;
+	opacity:25%;
+	cursor:pointer;
+}
+
+div#carrés5
+{
+	
+}
+
+div#carrés5:hover
+{
+	background-color: pink;
+	opacity:25%;
+	cursor:pointer;
+}
+
+div#carrés6
+{
+	
+}
+
+div#carrés6:hover
+{
+	background-color: purple;
+	opacity:25%;
+	cursor:pointer;
+}
+
+div#carrés7
+{
+	
+}
+
+div#carrés7:hover
+{
+	background-color: orange;
+	opacity:25%;
+	cursor:pointer;
+}
+
+div#carrés8
+{
+	
+}
+
+div#carrés8:hover
+{
+	background-color: brown;
+	opacity:25%;
+	cursor:pointer;
+}
+
+a.c
+{
+	text-align:center;
+	margin-top: 50%;
+	display:none;
 }
 
 div.photoEquipe
