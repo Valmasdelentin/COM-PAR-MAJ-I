@@ -213,14 +213,23 @@ p#CoordonnéesAgence
 
 div.reseauxSociaux
 {
-	width:50px;
-	height:50px;
+	width:100px;
+	height:100px;
 	margin-top: 50px;
 }
 
 div#facebook
 {
-	background-image: url("images/facebook_logo.jpg");
+	background-image: url("images/facebook_logo_black.png");
+	background-size: 75% 75%;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor:pointer;
+}
+
+div#facebook:hover
+{
+	background-image: url("images/facebook_logo_color.png");
 	background-size: 75% 75%;
     background-position: center;
     background-repeat: no-repeat;
@@ -229,7 +238,16 @@ div#facebook
 
 div#twitter
 {
-	background-image: url("images/twitter_logo.jpg");
+	background-image: url("images/twitter_logo_black.png");
+	background-size: 75% 75%;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor:pointer;
+}
+
+div#twitter:hover
+{
+	background-image: url("images/twitter_logo_color.png");
 	background-size: 75% 75%;
     background-position: center;
     background-repeat: no-repeat;
@@ -238,7 +256,16 @@ div#twitter
 
 div#instagram
 {
-	background-image: url("images/instagram_logo.png");
+	background-image: url("images/instagram_logo_black.png");
+	background-size: 75% 75%;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor:pointer;
+}
+
+div#instagram:hover
+{
+	background-image: url("images/instagram_logo_color.png");
 	background-size: 75% 75%;
     background-position: center;
     background-repeat: no-repeat;
