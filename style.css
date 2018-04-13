@@ -1,98 +1,254 @@
-header
-{
-	background-image:url("gif/peinture.gif");
-	background-repeat: no-repeat;
-	background-size: cover;
-	margin-top:0px;
-	width: 100%;
-	height:350px;
-	border:solid black 1px;
+html, body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background:#000;
+  font-size: 14px;
+  color:#000;
+}
+
+.swiper-container {
+  width: 100%;
+  max-width: 1920px;
+  height: 100%;
+  background:#000;
+}
+
+.swiper-slide {
+  font-size: 18px;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-v-button-prev, .swiper-v-button-next {
+  background-image:url(images/arrow.png);
+  position: absolute;
+  left: calc(50% - 32px);
+  z-index: 1;
+}
+
+.swiper-v-button-prev {
+  background-image:url(images/arrow.png);
+  top: 10px;
+  transform: rotate(90deg);
+  opacity: 0.3;
+  transition-property: opacity;
+  transition-duration: 1s;
+  width:64px;
+  height:64px;
+}
+
+.swiper-v-button-prev:hover, .swiper-v-button-next:hover {
+  opacity: 1;
+}
+
+.swiper-v-button-next {
+  background-image:url(images/arrow.png);
+  bottom: 10px;
+  transform: rotate(-90deg);
+  opacity:0.3;
+  transition-property: opacity;
+  transition-duration: 1s;
+  width:64px;
+  height:64px;
+}
+
+.swiper-h-button-next {
+  background-image:url(images/arrow.png);
+  top:calc(50% - 32px);
+  width:64px;
+  height:64px;
+  right:10px;
+  opacity:0.3;
+  transition-property: opacity;
+  transition-duration: 1s;
+  z-index: 1;
+  position:absolute;
+  transform:rotate(180deg);
+}
+
+.swiper-h-button-prev {
+  background-image:url(images/arrow.png);
+  top:calc(50% - 32px);
+  width:64px;
+  height:64px;
+  left:10px;
+  opacity:0.3;
+  transition-property: opacity;
+  transition-duration: 1s;
+  z-index: 1;
+  position:absolute;
+}
+
+.swiper-h-button-prev:hover, .swiper-h-button-next:hover {
+  opacity:1;
+}
+
+
+.swiper-v-button-prev.swiper-button-disabled, .swiper-v-button-next.swiper-button-disabled {
+  display: none;
+}
+
+.swiper-h-button-prev.swiper-button-disabled, .swiper-h-button-next.swiper-button-disabled {
+  display: none;
+}
+
+.has-image-background {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 550px) {
+  .swiper-v-button-next, .swiper-v-button-prev, .swiper-h-button-prev, .swiper-h-button-next  { 
+    background-image:url(images/arrow.png);
+    background-size: contain;
+    opacity:0.3;
+    width:50px;
+    height:50px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .swiper-v-button-prev{ 
+    left: calc(50% - 25px);
+    top:10px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .swiper-v-button-next{ 
+    left: calc(50% - 25px);
+    bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .swiper-h-button-prev { 
+    top:calc(50% - 25px);
+    left:10px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .swiper-h-button-next  { 
+    top:calc(50% - 25px);
+    right:10px;
+  }
+}
+
+#box-scroll {
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  overflow-y: scroll; /* has to be scroll, not auto */
+  float: left;
 }
 
 .logo
 {
-	margin:auto;
-	margin-top:75px;
-	border:solid black 1px;
-	border-radius: 50%;
-	width:200px;
-	height:200px;
-	background-image: url("images/logo.png");
-	background-size: 75% 75%;
+  margin:auto;
+  border:solid black 1px;
+  border-radius: 50%;
+  width:300px;
+  height:300px;
+  background-image: url("images/logo.png");
+  background-size: 75% 75%;
     background-position: center;
     background-repeat: no-repeat;
 }
 
+h2
+{
+  margin-top: 5%;
+}
+
 nav
 {
-	border:solid black 1px;
+  margin-top: 10%;
+  border:solid black 1px;
 }
+
 #menu_horizontal
-	{
-		text-align: center;
-		margin-top:20px;
-	}
+  {
+    text-align: center;
+    margin-top:20px;
+    padding: 0px;
+  }
 
 ul#menu_horizontal li 
-	{ 
-		display : inline;
-		padding : 1.5em; /* Pour espacer les boutons entre eux */
-		font-size: 1.5em; /*taille des boutons*/
-	}
+  { 
+    display : inline;
+    padding : 1.5em; /* Pour espacer les boutons entre eux */
+    font-size: 1.5em; /*taille des boutons*/
+  }
 
 ul#menu_horizontal 
-	{
-		list-style-type : none; /* Car sinon les puces se placent n'importe où */
-	}
+  {
+    list-style-type : none; /* Car sinon les puces se placent n'importe où */
+  }
 
 ul#menu_horizontal li a
-	{
-	 	color: #000;
-	}
+  {
+    color: #000;
+  }
 
 div.sections
 {
-	border:solid black 1px;
-	height:600px;
-	width:auto;
-	position: relative;
+  border:solid black 1px;
+  height:600px;
+  width:auto;
+  position: relative;
 }
 
 h1
 {
-	transform:rotate(-90deg);
+  transform:rotate(-90deg);
 }
 
 p#descriptionAgence
 {
-	text-align: justify;
-	margin-top: 100px;
+  text-align: justify;
+  margin-top: 100px;
 }
 
 div.cercles
 {
-	border:solid black 1px;
-	border-radius: 50%;
-	width:200px;
-	height:200px;
-	margin-top: 50px;
+  border:solid black 1px;
+  border-radius: 50%;
+  width:200px;
+  height:200px;
+  margin-top: 50px;
 }
 
 div.carrés
 {
-	border:solid black 1px;
-	width:200px;
-	height:200px;
-	margin-top:50px;
-	display:block;
-	animation-duration: 1s;
-	animation-delay: 0s;
+  border:solid black 1px;
+  width:200px;
+  height:200px;
+  margin-top:50px;
+  display:block;
+  animation-duration: 1s;
+  animation-delay: 0s;
 }
 
 div.carrés:hover
 {
-	width:250px;
-	height:250px;
+  width:250px;
+  height:250px;
 }
 
 div#carrés1
@@ -102,9 +258,9 @@ div#carrés1
 
 div#carrés1:hover
 {
-	background-color: blue;
-	opacity:25%;
-	cursor:pointer;
+  background-color: blue;
+  opacity:25%;
+  cursor:pointer;
 }
 
 div#carrés2
@@ -114,9 +270,9 @@ div#carrés2
 
 div#carrés2:hover
 {
-	background-color: red;
-	opacity:25%;
-	cursor:pointer;
+  background-color: red;
+  opacity:25%;
+  cursor:pointer;
 }
 
 div#carrés3
@@ -126,102 +282,102 @@ div#carrés3
 
 div#carrés3:hover
 {
-	background-color: green;
-	opacity:25%;
-	cursor:pointer;
+  background-color: green;
+  opacity:25%;
+  cursor:pointer;
 }
 
 div#carrés4
 {
-	
+  
 }
 
 div#carrés4:hover
 {
-	background-color: yellow;
-	opacity:25%;
-	cursor:pointer;
+  background-color: yellow;
+  opacity:25%;
+  cursor:pointer;
 }
 
 div#carrés5
 {
-	
+  
 }
 
 div#carrés5:hover
 {
-	background-color: pink;
-	opacity:25%;
-	cursor:pointer;
+  background-color: pink;
+  opacity:25%;
+  cursor:pointer;
 }
 
 div#carrés6
 {
-	
+  
 }
 
 div#carrés6:hover
 {
-	background-color: purple;
-	opacity:25%;
-	cursor:pointer;
+  background-color: purple;
+  opacity:25%;
+  cursor:pointer;
 }
 
 div#carrés7
 {
-	
+  
 }
 
 div#carrés7:hover
 {
-	background-color: orange;
-	opacity:25%;
-	cursor:pointer;
+  background-color: orange;
+  opacity:25%;
+  cursor:pointer;
 }
 
 div#carrés8
 {
-	
+  
 }
 
 div#carrés8:hover
 {
-	background-color: brown;
-	opacity:25%;
-	cursor:pointer;
+  background-color: brown;
+  opacity:25%;
+  cursor:pointer;
 }
 
 a.c
 {
-	text-align:center;
-	margin-top: 50%;
-	display:none;
+  text-align:center;
+  margin-top: 50%;
+  display:none;
 }
 
 div.photoEquipe
 {
-	border:solid black 1px;
-	width:400px;
-	height:400px;
-	margin-top: 100px;
+  border:solid black 1px;
+  width:400px;
+  height:400px;
+  margin-top: 100px;
 }
 
 p#CoordonnéesAgence
 {
-	margin-top: 100px;
+  margin-top: 100px;
 }
 
 div.reseauxSociaux
 {
-	width:100px;
-	height:100px;
-	margin-top: 50px;
+  width:100px;
+  height:100px;
+  margin-top: 50px;
 }
 
 div#facebook
 {
-	background-image: url("images/facebook_logo_black.png");
-	background-size: 75% 75%;
+  background-image: url("images/facebook_logo_black.png");
+  background-size: 75% 75%;
     background-position: center;
     background-repeat: no-repeat;
     cursor:pointer;
@@ -229,8 +385,8 @@ div#facebook
 
 div#facebook:hover
 {
-	background-image: url("images/facebook_logo_color.png");
-	background-size: 75% 75%;
+  background-image: url("images/facebook_logo_color.png");
+  background-size: 75% 75%;
     background-position: center;
     background-repeat: no-repeat;
     cursor:pointer;
@@ -238,8 +394,8 @@ div#facebook:hover
 
 div#twitter
 {
-	background-image: url("images/twitter_logo_black.png");
-	background-size: 75% 75%;
+  background-image: url("images/twitter_logo_black.png");
+  background-size: 75% 75%;
     background-position: center;
     background-repeat: no-repeat;
     cursor:pointer;
@@ -247,8 +403,8 @@ div#twitter
 
 div#twitter:hover
 {
-	background-image: url("images/twitter_logo_color.png");
-	background-size: 75% 75%;
+  background-image: url("images/twitter_logo_color.png");
+  background-size: 75% 75%;
     background-position: center;
     background-repeat: no-repeat;
     cursor:pointer;
@@ -256,8 +412,8 @@ div#twitter:hover
 
 div#instagram
 {
-	background-image: url("images/instagram_logo_black.png");
-	background-size: 75% 75%;
+  background-image: url("images/instagram_logo_black.png");
+  background-size: 75% 75%;
     background-position: center;
     background-repeat: no-repeat;
     cursor:pointer;
@@ -265,8 +421,8 @@ div#instagram
 
 div#instagram:hover
 {
-	background-image: url("images/instagram_logo_color.png");
-	background-size: 75% 75%;
+  background-image: url("images/instagram_logo_color.png");
+  background-size: 75% 75%;
     background-position: center;
     background-repeat: no-repeat;
     cursor:pointer;
@@ -274,12 +430,12 @@ div#instagram:hover
 
 p#descriptionContacte
 {
-	margin-top: 50px;
+  margin-top: 50px;
 }
 
 footer
 {
-	height:50px;
-	width:auto;
-	background-color: #000;
+  height:50px;
+  width:auto;
+  background-color: #000;
 }
