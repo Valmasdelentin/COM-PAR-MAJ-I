@@ -32,7 +32,7 @@
                 <div class="row">
                   <div class="col-md-12">
                     <!-- menu -->
-                    <nav>     
+                    <nav class="hiden-xs">     
                       <ul id="menu_horizontal">
                         <li><a href="#page-1">Accueil</a></li>
                         <li><a href="#page-2">Agence</a></li>
@@ -50,6 +50,7 @@
                 <div class="container">
                   <div class="row">
                     <div class="col-md-1">
+                      <img src="images/arrowsBack.png" class="arrowsBack" href="#page-1" alt="">
                       <h1 id="agence">AGENCE</h1>
                     </div>
                     <div class="col-md-11">
@@ -85,6 +86,9 @@
                 <div class="container">
                   <div class="row">
                     <div class="col-md-1">
+                      <a href="#page-1">
+                        <img src="images/arrowsBack.png" class="arrowsBack" alt="">
+                      </a>
                       <h1 id="portfolio">PORTFOLIO</h1>
                     </div>
                     <div class="col-md-11">
@@ -147,7 +151,18 @@
                   <div class="container">
                     <div class="row">
                       <div class="col-md-1">
-                        <h1 id="contacts">CONTACTS</h1>
+                        <div class="row">
+                          <div class="col-md-12">
+                            <a href="#page-2">
+                              <img src="images/arrowsBack.png" class="arrowsBack" alt="">
+                            </a>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-12">
+                            <h1 id="contacts">CONTACTS</h1>
+                          </div>
+                        </div>
                       </div>
                       <div class="col-md-11">
                         <div class="col-md-12">
@@ -184,12 +199,15 @@
                 </div>
               </div>
             </div>
+            <div class="swiper-pagination swiper-pagination-v"></div>
           </div>
         </div>
           
       </div>
+<!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
 
-      <!-- Add Arrow -->
+<!-- Add Arrow -->
       <!-- <div class="swiper-h-button-next hidden-xs"></div>
       <div class="swiper-h-button-prev hidden-xs"></div>
       <div class="swiper-v-button-next hidden-xs"></div>
@@ -233,7 +251,12 @@
           nextEl: '.swiper-v-button-next',
           prevEl: '.swiper-v-button-prev',
         },
+        pagination: {
+             el: '.swiper-pagination-v',
+             clickable: true,
+        },
         freeMode: true,
+        autoHeight: true,
         scrollbar: {
           el: '.swiper-scrollbar',
         },
