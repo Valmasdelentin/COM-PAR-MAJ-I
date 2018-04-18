@@ -2,22 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>test Agence de communication - COM PAR MAJ'I</title>
+    <title>Agence de communication - COM PAR MAJ'I</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.6/css/swiper.css">
     <link rel="stylesheet" href="animate.min.css">
     <link rel="stylesheet" href="style.css">  
   </head>
   <body>
-    <div class="swiper-container swiper-container-h">
-      <div class="swiper-wrapper">
-
         <!-- header -->
-        <div class="swiper-slide" id="page-1">
-          <div class="swiper-container swiper-container-v">
-            <div class="swiper-wrapper">
-            <div class="swiper-slide has-image-background" style="background-image:url('gif/peinture.gif");>
+        <div id="page-1">
+          <div class="sections">
+            <div class="has-image-background" style="background-image:url('gif/peinture.gif');height:1000px; width:100%;">
               <div class="container">
                 <div class="row">
                   <div class="col-md-12">
@@ -34,23 +28,24 @@
                     <!-- menu -->
                     <nav class="hiden-xs">     
                       <ul id="menu_horizontal">
-                        <li><a href="#page-1">Accueil</a></li>
-                        <li><a href="#page-2">Agence</a></li>
-                        <li><a href="#page-3">Portfolio</a></li>
-                        <li><a href="#page-4">Contacts</a></li>
+                        <li><a href="#page-2" class="js-scrollTo">Agence</a></li>
+                        <li><a href="#page-3" class="js-scrollTo">Portfolio</a></li>
+                        <li><a href="#page-4" class="js-scrollTo">Contacts</a></li>
                       </ul>
                     </nav>
                   </div>
                 </div>
               </div>
             </div>
+            </div>
             <!-- slide1 -->
-            <div class="swiper-slide" id="page-2" style="background-color: #fff;">
-              <div class="sections">
+              <div class="sections" id="S1" id="page-2">
                 <div class="container">
                   <div class="row">
                     <div class="col-md-1">
-                      <img src="images/arrowsBack.png" class="arrowsBack" href="#page-1" alt="">
+                      <a href="#page-1" class="js-scrollTo">
+                        <img src="images/arrowsBack.png" class="arrowsBack" href="#page-1" alt="">
+                      </a>
                       <h1 id="agence">AGENCE</h1>
                     </div>
                     <div class="col-md-11">
@@ -79,14 +74,12 @@
                   </div>
                 </div>
               </div>
-            </div>
             <!-- slide2 -->
-            <div class="swiper-slide" id="page-3" style="background-color: #fff;">
-              <div class="sections">
+              <div class="sections" id="S2" id="page-3">
                 <div class="container">
                   <div class="row">
                     <div class="col-md-1">
-                      <a href="#page-1">
+                      <a href="#page-1" class="js-scrollTo">
                         <img src="images/arrowsBack.png" class="arrowsBack" alt="">
                       </a>
                       <h1 id="portfolio">PORTFOLIO</h1>
@@ -144,16 +137,14 @@
                   </div>
                 </div>
               </div>
-            </div>
             <!-- slide3 -->
-              <div class="swiper-slide" id="page-4" style="background-color: #fff;">
-                <div class="sections">
+                <div class="sections" id="S3" id="page-4">
                   <div class="container">
                     <div class="row">
                       <div class="col-md-1">
                         <div class="row">
                           <div class="col-md-12">
-                            <a href="#page-2">
+                            <a href="#page-1" class="js-scrollTo">
                               <img src="images/arrowsBack.png" class="arrowsBack" alt="">
                             </a>
                           </div>
@@ -197,172 +188,102 @@
                     </div>
                   </div>
                 </div>
-              </div>
             </div>
-            <div class="swiper-pagination swiper-pagination-v"></div>
           </div>
         </div>
           
       </div>
-<!-- Add Pagination -->
-      <div class="swiper-pagination"></div>
-
-<!-- Add Arrow -->
-      <!-- <div class="swiper-h-button-next hidden-xs"></div>
-      <div class="swiper-h-button-prev hidden-xs"></div>
-      <div class="swiper-v-button-next hidden-xs"></div>
-      <div class="swiper-v-button-prev hidden-xs"></div> -->
 
     </div>
       
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.6/js/swiper.js"></script>
-    <script src="js/jquery-1.10.2.min.js"></script>
-    <script src="js/jquery.dragscroll.js"></script>
-    
+    <script type="text/javascript" src="js/mesfonctions.js"></script>
     <script>
-
-      var swiperH = new Swiper('.swiper-container-h', {
-        spaceBetween: 1,
-        navigation: {
-          nextEl: '.swiper-h-button-next',
-          prevEl: '.swiper-h-button-prev',
-        },
-        on: {
-          init:  function() {
-            verifVertical(this.slides[this.activeIndex]);
-            ToggleVerticalArrow();
-          },
-          slideChange : function(){
-            ResetVerticalSlides();
-            verifVertical(this.slides[this.activeIndex]);
-            animationLaunch(this.slides[this.activeIndex]);
-            },
-        } 
-
-      });
-         
-      var swiperV = new Swiper('.swiper-container-v', {
-        direction: 'vertical',
-        spaceBetween: 1,
-        autoHeight: false,
-        navigation: {
-          nextEl: '.swiper-v-button-next',
-          prevEl: '.swiper-v-button-prev',
-        },
-        pagination: {
-             el: '.swiper-pagination-v',
-             clickable: true,
-        },
-        freeMode: true,
-        autoHeight: true,
-        scrollbar: {
-          el: '.swiper-scrollbar',
-        },
-        mousewheel: true,
-        
-
-        on: {
-          init: function (){
-            verifVertical(this.slides[this.activeIndex]);
-            ToggleVerticalArrow();
-            
-          },
-          slideChange : function(){
-            verifVertical(this.slides[this.activeIndex]);
-            ToggleVerticalArrow();
-          } 
-        }
-
-        
-
-      });
-
-          
-      // JS Hide Vertical arrow         
-        function ResetVerticalSlides(){
-          $('.swiper-container-v').each(function() {
-            swiperV = this.swiper;
-            swiperV.slideTo(0,200,false);
-          });
-        }
-
-        function animationLaunch(current_slide){
-          $('.animation').each(function() {
-            var effect = $(this).data("animation");
-            $(this).removeClass('animated ' + effect);
-          });
-          var effect = $(current_slide).find('.animation').data("animation");
-          $(current_slide).find('.animation').addClass('animated ' + effect);
-
-        }
-         
-        function verifVertical(current_slide){
-          if($(current_slide).children().hasClass('swiper-container-v')){
-            ToggleVerticalArrow();
-          }
-          else{
-            ToggleVerticalArrow(false);
-          }
-        }
-         
-        function ToggleVerticalArrow(status = true){
-          if(status){
-            if( $('.swiper-v-button-prev').hasClass('swiper-button-disabled') ){
-              $('.swiper-v-button-prev').hide();
-            }
-            else{
-              $('.swiper-v-button-prev').show();
-            }
-         
-            if( $('.swiper-v-button-next').hasClass('swiper-button-disabled') ){
-              $('.swiper-v-button-next').hide();
-            }
-            else{
-              $('.swiper-v-button-next').show();
-            }
-          }
-          else{
-            $('.swiper-v-button-prev').hide();
-            $('.swiper-v-button-next').hide();
-          }
-
-        }
-
-        // JS Hide Horizontal arrow
-        function verifHorizontal(current_slide){
-          if($(current_slide).children().hasClass('swiper-container-h')){
-            ToggleHorizontalArrow();
-          }
-          else{
-            ToggleHorizontalArrow(false);
-          }
-        }
-         
-        function ToggleHorizontalArrow(status = true){
-          if(status){
-            if( $('.swiper-h-button-prev').hasClass('swiper-button-disabled') ){
-              $('.swiper-h-button-prev').hide();
-            }
-            else{
-              $('.swiper-h-button-prev').show();
-            }
-
-         
-            if( $('.swiper-h-button-next').hasClass('swiper-button-disabled') ){
-              $('.swiper-h-button-next').hide();
-            }
-            else{
-              $('.swiper-h-button-next').show();
-            }
-          }
-          else{
-            $('.swiper-h-button-prev').hide();
-            $('.swiper-h-button-next').hide();
-          }
+      $(document).ready(function() {
+  $('.js-scrollTo').on('click', function() { // Au clic sur un élément
+    var page = $(this).attr('href'); // Page cible
+    var speed = 3000; // Durée de l'animation (en ms)
+    $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+    return false;
+  });
+});
+    </script>
+    <script>
+        function adpaterALaTailleDeLaFenetre(){
+  var largeur = document.documentElement.clientWidth,
+  hauteur = document.documentElement.clientHeight;
+   
+  var source = document.getElementById('S1'); // récupère l'id source
+  source.style.height = hauteur+'px'; // applique la hauteur de la page
+  source.style.width = largeur+'px'; // la largeur
+}
  
-        }
+// Une fonction de compatibilité pour gérer les évènements
+function addEvent(element, type, listener){
+  if(element.addEventListener){
+    element.addEventListener(type, listener, false);
+  }else if(element.attachEvent){
+    element.attachEvent("on"+type, listener);
+  }
+}
+ 
+// On exécute la fonction une première fois au chargement de la page
+addEvent(window, "load", adpaterALaTailleDeLaFenetre);
+// Puis à chaque fois que la fenêtre est redimensionnée
+addEvent(window, "resize", adpaterALaTailleDeLaFenetre);
+
+    </script>
+
+    <script>
+        function adpaterALaTailleDeLaFenetre(){
+  var largeur = document.documentElement.clientWidth,
+  hauteur = document.documentElement.clientHeight;
+   
+  var source = document.getElementById('S2'); // récupère l'id source
+  source.style.height = hauteur+'px'; // applique la hauteur de la page
+  source.style.width = largeur+'px'; // la largeur
+}
+ 
+// Une fonction de compatibilité pour gérer les évènements
+function addEvent(element, type, listener){
+  if(element.addEventListener){
+    element.addEventListener(type, listener, false);
+  }else if(element.attachEvent){
+    element.attachEvent("on"+type, listener);
+  }
+}
+ 
+// On exécute la fonction une première fois au chargement de la page
+addEvent(window, "load", adpaterALaTailleDeLaFenetre);
+// Puis à chaque fois que la fenêtre est redimensionnée
+addEvent(window, "resize", adpaterALaTailleDeLaFenetre);
+
+    </script>
+
+    <script>
+        function adpaterALaTailleDeLaFenetre(){
+  var largeur = document.documentElement.clientWidth,
+  hauteur = document.documentElement.clientHeight;
+   
+  var source = document.getElementById('S3'); // récupère l'id source
+  source.style.height = hauteur+'px'; // applique la hauteur de la page
+  source.style.width = largeur+'px'; // la largeur
+}
+ 
+// Une fonction de compatibilité pour gérer les évènements
+function addEvent(element, type, listener){
+  if(element.addEventListener){
+    element.addEventListener(type, listener, false);
+  }else if(element.attachEvent){
+    element.attachEvent("on"+type, listener);
+  }
+}
+ 
+// On exécute la fonction une première fois au chargement de la page
+addEvent(window, "load", adpaterALaTailleDeLaFenetre);
+// Puis à chaque fois que la fenêtre est redimensionnée
+addEvent(window, "resize", adpaterALaTailleDeLaFenetre);
 
     </script>
   </body>
