@@ -9,166 +9,24 @@ body {
   color:#000;
 }
 
-.swiper-container {
-  width: 100%;
-  max-width: 1920px;
-  height: 100%;
-  background:#000;
-}
-
-.swiper-slide {
-  font-size: 18px;
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-}
-
-.swiper-v-button-prev, .swiper-v-button-next {
-  background-image:url(images/arrow.png);
-  position: absolute;
-  left: calc(50% - 32px);
-  z-index: 1;
-}
-
-.swiper-v-button-prev {
-  background-image:url(images/arrow.png);
-  top: 10px;
-  transform: rotate(90deg);
-  opacity: 0.3;
-  transition-property: opacity;
-  transition-duration: 1s;
-  width:64px;
-  height:64px;
-}
-
-.swiper-v-button-prev:hover, .swiper-v-button-next:hover {
-  opacity: 1;
-}
-
-.swiper-v-button-next {
-  background-image:url(images/arrow.png);
-  bottom: 10px;
-  transform: rotate(-90deg);
-  opacity:0.3;
-  transition-property: opacity;
-  transition-duration: 1s;
-  width:64px;
-  height:64px;
-}
-
-.swiper-h-button-next {
-  background-image:url(images/arrow.png);
-  top:calc(50% - 32px);
-  width:64px;
-  height:64px;
-  right:10px;
-  opacity:0.3;
-  transition-property: opacity;
-  transition-duration: 1s;
-  z-index: 1;
-  position:absolute;
-  transform:rotate(180deg);
-}
-
-.swiper-h-button-prev {
-  background-image:url(images/arrow.png);
-  top:calc(50% - 32px);
-  width:64px;
-  height:64px;
-  left:10px;
-  opacity:0.3;
-  transition-property: opacity;
-  transition-duration: 1s;
-  z-index: 1;
-  position:absolute;
-}
-
-.swiper-h-button-prev:hover, .swiper-h-button-next:hover {
-  opacity:1;
-}
-
-
-.swiper-v-button-prev.swiper-button-disabled, .swiper-v-button-next.swiper-button-disabled {
-  display: none;
-}
-
-.swiper-h-button-prev.swiper-button-disabled, .swiper-h-button-next.swiper-button-disabled {
-  display: none;
-}
-
 .has-image-background {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
 }
 
-@media only screen and (max-width: 550px) {
-  .swiper-v-button-next, .swiper-v-button-prev, .swiper-h-button-prev, .swiper-h-button-next  { 
-    background-image:url(images/arrow.png);
-    background-size: contain;
-    opacity:0.3;
-    width:50px;
-    height:50px;
-  }
-}
-
-@media only screen and (max-width: 550px) {
-  .swiper-v-button-prev{ 
-    left: calc(50% - 25px);
-    top:10px;
-  }
-}
-
-@media only screen and (max-width: 550px) {
-  .swiper-v-button-next{ 
-    left: calc(50% - 25px);
-    bottom: 10px;
-  }
-}
-
-@media only screen and (max-width: 550px) {
-  .swiper-h-button-prev { 
-    top:calc(50% - 25px);
-    left:10px;
-  }
-}
-
-@media only screen and (max-width: 550px) {
-  .swiper-h-button-next  { 
-    top:calc(50% - 25px);
-    right:10px;
-  }
-}
-
-#box-scroll {
-  width: 80%;
-  height: 80%;
-  margin: auto;
-  overflow-y: scroll; /* has to be scroll, not auto */
-  float: left;
-}
-
 .logo
 {
   margin:auto;
+  margin-top:50px;
   border:solid black 1px;
   border-radius: 50%;
   width:300px;
   height:300px;
   background-image: url("images/logo.png");
   background-size: 75% 75%;
-    background-position: center;
-    background-repeat: no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 h2
@@ -208,10 +66,23 @@ ul#menu_horizontal li a
 
 div.sections
 {
-  border:solid black 1px;
-  height:600px;
-  width:auto;
+  width: 100%;
+  background:#000;
+  border:solid black 4px;
   position: relative;
+  background-color: #fff;
+   display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
 }
 
 h1
@@ -453,6 +324,7 @@ p#descriptionContacte
 {
   width: 50px;
   transform: rotate(180deg);
+  margin-top:20px;
 }
 
 footer
