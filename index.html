@@ -9,8 +9,7 @@
   </head>
   <body>
         <!-- header -->
-        <div id="page-1">
-          <div class="sections">
+          <div id="page-1">
             <div class="has-image-background" style="background-image:url('gif/peinture.gif');height:1000px; width:100%;">
               <div class="container">
                 <div class="row">
@@ -37,9 +36,8 @@
                 </div>
               </div>
             </div>
-            </div>
             <!-- slide1 -->
-              <div class="sections" id="S1" id="page-2">
+              <div class="sections" id="page-2">
                 <div class="container">
                   <div class="row">
                     <div class="col-md-1">
@@ -75,7 +73,7 @@
                 </div>
               </div>
             <!-- slide2 -->
-              <div class="sections" id="S2" id="page-3">
+              <div class="sections" id="page-3">
                 <div class="container">
                   <div class="row">
                     <div class="col-md-1">
@@ -138,7 +136,7 @@
                 </div>
               </div>
             <!-- slide3 -->
-                <div class="sections" id="S3" id="page-4">
+                <div class="sections" id="page-4">
                   <div class="container">
                     <div class="row">
                       <div class="col-md-1">
@@ -209,12 +207,12 @@
   });
 });
     </script>
-    <script>
+    <!-- <script>
         function adpaterALaTailleDeLaFenetre(){
   var largeur = document.documentElement.clientWidth,
   hauteur = document.documentElement.clientHeight;
    
-  var source = document.getElementById('S1'); // récupère l'id source
+  var source = document.getElementById("s"); // récupère l'id source
   source.style.height = hauteur+'px'; // applique la hauteur de la page
   source.style.width = largeur+'px'; // la largeur
 }
@@ -233,58 +231,6 @@ addEvent(window, "load", adpaterALaTailleDeLaFenetre);
 // Puis à chaque fois que la fenêtre est redimensionnée
 addEvent(window, "resize", adpaterALaTailleDeLaFenetre);
 
-    </script>
-
-    <script>
-        function adpaterALaTailleDeLaFenetre(){
-  var largeur = document.documentElement.clientWidth,
-  hauteur = document.documentElement.clientHeight;
-   
-  var source = document.getElementById('S2'); // récupère l'id source
-  source.style.height = hauteur+'px'; // applique la hauteur de la page
-  source.style.width = largeur+'px'; // la largeur
-}
- 
-// Une fonction de compatibilité pour gérer les évènements
-function addEvent(element, type, listener){
-  if(element.addEventListener){
-    element.addEventListener(type, listener, false);
-  }else if(element.attachEvent){
-    element.attachEvent("on"+type, listener);
-  }
-}
- 
-// On exécute la fonction une première fois au chargement de la page
-addEvent(window, "load", adpaterALaTailleDeLaFenetre);
-// Puis à chaque fois que la fenêtre est redimensionnée
-addEvent(window, "resize", adpaterALaTailleDeLaFenetre);
-
-    </script>
-
-    <script>
-        function adpaterALaTailleDeLaFenetre(){
-  var largeur = document.documentElement.clientWidth,
-  hauteur = document.documentElement.clientHeight;
-   
-  var source = document.getElementById('S3'); // récupère l'id source
-  source.style.height = hauteur+'px'; // applique la hauteur de la page
-  source.style.width = largeur+'px'; // la largeur
-}
- 
-// Une fonction de compatibilité pour gérer les évènements
-function addEvent(element, type, listener){
-  if(element.addEventListener){
-    element.addEventListener(type, listener, false);
-  }else if(element.attachEvent){
-    element.attachEvent("on"+type, listener);
-  }
-}
- 
-// On exécute la fonction une première fois au chargement de la page
-addEvent(window, "load", adpaterALaTailleDeLaFenetre);
-// Puis à chaque fois que la fenêtre est redimensionnée
-addEvent(window, "resize", adpaterALaTailleDeLaFenetre);
-
-    </script>
+    </script> -->
   </body>
 </html>
