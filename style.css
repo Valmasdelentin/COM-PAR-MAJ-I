@@ -10,7 +10,7 @@ body {
 }
 
 .has-image-background {
-  background-image:url('gif/peinture.gif');
+  background-image:url('gif/200w(10).webp');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -21,7 +21,7 @@ body {
 .logo
 {
   margin:auto;
-  margin-top:50px;
+  margin-top:150px;
   border:solid black 1px;
   border-radius: 50%;
   width:300px;
@@ -41,6 +41,8 @@ nav
 {
   margin-top: 10%;
   border:solid black 1px;
+  background-color: black;
+  border-radius: 50%;
 }
 
 #menu_horizontal
@@ -64,7 +66,7 @@ ul#menu_horizontal
 
 ul#menu_horizontal li a
   {
-    color: #000;
+    color: #fff;
   }
 
   div#page-1
@@ -104,8 +106,9 @@ h1
 p#descriptionAgence
 {
   text-align: justify;
-  margin-top: 100px;
-  font-size:1vw;
+  margin-top: 50px;
+  font-size:18px;
+  margin-bottom:25px;
 
 }
 
@@ -115,7 +118,10 @@ div.cercles
   border-radius: 50%;
   width:160px;
   height:160px;
-  margin-top: 50px;
+  margin:0 auto;
+  margin-top:50px;
+  margin-bottom: 50px;
+  padding:auto;
 }
 
 div.carrés
@@ -123,7 +129,9 @@ div.carrés
   border:solid black 1px;
   width:200px;
   height:200px;
+  margin:0 auto;
   margin-top:50px;
+  margin-bottom: 50px;
   display:block;
   animation-duration: 1s;
   animation-delay: 0s;
@@ -248,6 +256,7 @@ div.photoEquipe
   border:solid black 1px;
   width:400px;
   height:400px;
+  margin:0 auto;
   margin-top: 100px;
 }
 
@@ -260,6 +269,7 @@ div.reseauxSociaux
 {
   width:100px;
   height:100px;
+  margin:auto;
   margin-top: 50px;
 }
 
@@ -267,59 +277,57 @@ div#facebook
 {
   background-image: url("images/facebook_logo_black.png");
   background-size: 75% 75%;
-    background-position: center;
-    background-repeat: no-repeat;
-    cursor:pointer;
+  background-repeat: no-repeat;
+  cursor:pointer;
 }
 
 div#facebook:hover
 {
   background-image: url("images/facebook_logo_color.png");
   background-size: 75% 75%;
-    background-position: center;
-    background-repeat: no-repeat;
-    cursor:pointer;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor:pointer;
 }
 
 div#twitter
 {
   background-image: url("images/twitter_logo_black.png");
   background-size: 75% 75%;
-    background-position: center;
-    background-repeat: no-repeat;
-    cursor:pointer;
+  background-repeat: no-repeat;
+  cursor:pointer;
 }
 
 div#twitter:hover
 {
   background-image: url("images/twitter_logo_color.png");
   background-size: 75% 75%;
-    background-position: center;
-    background-repeat: no-repeat;
-    cursor:pointer;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor:pointer;
 }
 
 div#instagram
 {
   background-image: url("images/instagram_logo_black.png");
   background-size: 75% 75%;
-    background-position: center;
-    background-repeat: no-repeat;
-    cursor:pointer;
+  background-repeat: no-repeat;
+  cursor:pointer;
 }
 
 div#instagram:hover
 {
   background-image: url("images/instagram_logo_color.png");
   background-size: 75% 75%;
-    background-position: center;
-    background-repeat: no-repeat;
-    cursor:pointer;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor:pointer;
 }
 
 p#descriptionContacte
 {
   margin-top: 50px;
+  margin-bottom:50px;
 }
 
 .arrowsBack
@@ -343,6 +351,11 @@ footer
     height:auto;
   }
 
+  nav
+  {
+    margin-top:100px;
+  }
+
   div.sections
   {
     border:solid black 1px;
@@ -350,8 +363,8 @@ footer
 
   div.cercles
   {
-    width:150px;
-    height:150px;
+    width:125px;
+    height:125px;
   }
 
   div.carrés
@@ -361,17 +374,70 @@ footer
     height:150px;
   }
 }
-@media screen and (max-width: 1000px)
+@media screen and (max-width: 991px)
 {
-  /*#agence, #portfolio, #contacts
+  h1
   {
+    transform:rotate(0deg);
+    margin-top: 50px;
+    text-align: center;
+  }
 
-  }*/
+  p#descriptionAgence
+  {
+    text-align: left;
+  }
+
+  div.cercles
+  {
+    width:175px;
+    height:175px;
+    margin:0 auto;
+    margin-top:50px;
+    margin-bottom: 50px;
+    padding:auto;
+  }
+
+  div.photoEquipe
+  {
+    border:solid black 1px;
+    width:700px;
+    height:700px;
+    margin-top: 100px;
+  }
+}
+
+@media screen and (max-width: 800px)
+{
   h1
   {
     transform:rotate(0deg);
     margin-top: 50px;
     text-align:center;
+  }
+
+  p#descriptionAgence
+  {
+    text-align: left;
+  }
+
+  div.photoEquipe
+  {
+    border:solid black 1px;
+    width:600px;
+    height:600px;
+    margin-top: 100px;
+  }
+}
+
+@media screen and (max-width: 600px)
+{
+  div.photoEquipe
+  {
+    border:solid black 1px;
+    width:400px;
+    height:400px;
+    margin-top: 100px;
   }
 }
 
@@ -402,6 +468,13 @@ footer
     width:250px;
     height:250px;
     margin-top: 100px;
+  }
+
+  div.reseauxSociaux
+  {
+    width:75px;
+    height:75px;
+    margin-top: 50px;
   }
 
 }
